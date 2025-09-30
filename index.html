@@ -1,13 +1,227 @@
 ---
-layout: presentation
+layout: landing
+title: Нашегомир — кафе будущего
 ---
+<header class="hero" id="top">
+  <nav class="nav">
+    <a class="logo" href="#top">Нашегомир</a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav__links" id="navMenu">
+      <li><a href="#concept">Концепция</a></li>
+      <li><a href="#algorithms">Алгоритмы</a></li>
+      <li><a href="#menu">Меню</a></li>
+      <li><a href="#gallery">Атмосфера</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ul>
+  </nav>
+  <div class="hero__content">
+    <div class="hero__text">
+      <span class="hero__eyebrow">Кафе с сердцем мегаполиса</span>
+      <h1>Лендинг нового поколения для кофейни «Нашегомир»</h1>
+      <p>Мы сочетаем сложные алгоритмы, авторский кофе и цифровой комфорт, чтобы каждый гость почувствовал себя частью нашей истории.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#menu">Посмотреть меню</a>
+        <a class="btn btn--ghost" href="#contact">Забронировать стол</a>
+      </div>
+    </div>
+    <div class="hero__visual" aria-hidden="true">
+      <div class="cup">
+        <div class="cup__lid"></div>
+        <div class="cup__body"></div>
+        <div class="cup__steam">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="hero__orb hero__orb--left"></div>
+      <div class="hero__orb hero__orb--right"></div>
+    </div>
+  </div>
+  <div class="hero__scroll">Скрольте вниз, чтобы открыть мир вкуса</div>
+</header>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+<main>
+  <section class="section section--glass reveal" id="concept">
+    <div class="section__header">
+      <span class="section__eyebrow">Цифровая теплотa</span>
+      <h2>Концепция, рожденная в ритме города</h2>
+      <p>Нашегомир — это не просто кофе-пойнт. Это пространство, где технологичность встречается с уютом, а гости открывают для себя новые грани вкуса через интерактивный опыт.</p>
+    </div>
+    <div class="features">
+      <article class="feature-card reveal">
+        <div class="feature-card__visual feature-card__visual--hologram"></div>
+        <h3>Голографический бариста</h3>
+        <p>Виртуальные бариста помогут подобрать напиток по настроению, используя машинное обучение и анализ вкусовых предпочтений.</p>
+      </article>
+      <article class="feature-card reveal">
+        <div class="feature-card__visual feature-card__visual--sound"></div>
+        <h3>Звуковой ландшафт</h3>
+        <p>Алгоритмы подстраивают музыку и шум города под динамику зала, создавая атмосферу мегаполиса без лишнего шума.</p>
+      </article>
+      <article class="feature-card reveal">
+        <div class="feature-card__visual feature-card__visual--garden"></div>
+        <h3>Висячий цифровой сад</h3>
+        <p>Инсталляция реагирует на настроение гостей, окрашивая световые потоки в оттенки, которые подчеркивают вкус напитка.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--dark reveal" id="algorithms">
+    <div class="section__header">
+      <span class="section__eyebrow">Сложные алгоритмы</span>
+      <h2>Умное ядро «Нашегомира»</h2>
+      <p>Три взаимосвязанных 3D-алгоритма помогают нам создавать уникальный опыт — от персонализации напитка до управления пространством.</p>
+    </div>
+    <div class="algorithm-grid">
+      <div class="algorithm-card reveal">
+        <h3>NeuroTaste 3D</h3>
+        <p>Моделирует карту вкуса в объёмном пространстве, связывая ингредиенты, настроение и интенсивность аромата.</p>
+        <ul>
+          <li>Сканирование предпочтений через приложение</li>
+          <li>Реакция на время суток и погоду</li>
+          <li>Визуализация в реальном времени на медиа-стене</li>
+        </ul>
+      </div>
+      <div class="algorithm-card algorithm-card--center reveal">
+        <h3>FlowCity Engine</h3>
+        <p>Управляет потоками гостей и света, создавая плавные переходы между зонами кафе.</p>
+        <ul>
+          <li>3D-планировщик пространства с AR-подсветкой</li>
+          <li>Адаптивные сценарии освещения</li>
+          <li>Динамические траектории обслуживания</li>
+        </ul>
+      </div>
+      <div class="algorithm-card reveal">
+        <h3>Pulse Brew AI</h3>
+        <p>Контролирует процесс обжарки и заваривания, учитывая биоритмы города и вашу персональную ленту событий.</p>
+        <ul>
+          <li>Датчики температуры и влажности</li>
+          <li>Калибровка вкуса под энергетический ритм</li>
+          <li>Адаптивная подача напитка</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--light reveal" id="menu">
+    <div class="section__header">
+      <span class="section__eyebrow">Вкус в трёх измерениях</span>
+      <h2>Подборка напитков, рожденных алгоритмами</h2>
+    </div>
+    <div class="menu-grid">
+      <article class="menu-card reveal" data-depth="0.15">
+        <h3>Космический раф</h3>
+        <p>Эспрессо с карамелизированным жасмином и бархатной пеной, подсвеченный галактическим узором.</p>
+        <span class="menu-card__price">420 ₽</span>
+      </article>
+      <article class="menu-card reveal" data-depth="0.25">
+        <h3>Городской дрип</h3>
+        <p>Лёгкий фильтр с нотами бергамота и дымки мегаполиса, подается с индивидуальным плейлистом.</p>
+        <span class="menu-card__price">360 ₽</span>
+      </article>
+      <article class="menu-card reveal" data-depth="0.35">
+        <h3>Алгоритмический флэт уайт</h3>
+        <p>Идеальный баланс кофе и молока, подобранный на основе вашей активности за день.</p>
+        <span class="menu-card__price">390 ₽</span>
+      </article>
+      <article class="menu-card reveal" data-depth="0.45">
+        <h3>Энерголатте «Пульс»</h3>
+        <p>Матча, гуарана и цитрусовые, дополненные энергетическим паттерном подсветки вашего столика.</p>
+        <span class="menu-card__price">440 ₽</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--gallery reveal" id="gallery">
+    <div class="section__header">
+      <span class="section__eyebrow">Атмосфера</span>
+      <h2>Погружение в визуальный мир Нашегомира</h2>
+    </div>
+    <div class="gallery">
+      <figure class="gallery__item reveal">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Кофейня с неоновым светом">
+        <figcaption>Лобби с живыми световыми волнами</figcaption>
+      </figure>
+      <figure class="gallery__item reveal">
+        <img src="https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?auto=format&fit=crop&w=600&q=80" alt="Бариста готовит кофе">
+        <figcaption>Бариста и голографический помощник</figcaption>
+      </figure>
+      <figure class="gallery__item reveal">
+        <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=600&q=80" alt="Столы и гости">
+        <figcaption>Зал с адаптивным освещением</figcaption>
+      </figure>
+      <figure class="gallery__item reveal">
+        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=600&q=80" alt="Кофейная чашка">
+        <figcaption>Авторские напитки в стеклянных сферах</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section--testimonials reveal">
+    <div class="section__header">
+      <span class="section__eyebrow">Отзывы</span>
+      <h2>Гости о Нашегомире</h2>
+    </div>
+    <div class="testimonials">
+      <article class="testimonial reveal">
+        <p>«Это место похоже на портал. Кофе подбирается под настроение, а музыка будто понимает тебя. Удивительное сочетание технологий и уюта.»</p>
+        <span>— Анна, урбанист</span>
+      </article>
+      <article class="testimonial reveal">
+        <p>«Виртуальный бариста запомнил мои предпочтения, и каждый раз я получаю идеальный напиток. Невероятно!»</p>
+        <span>— Михаил, предприниматель</span>
+      </article>
+      <article class="testimonial reveal">
+        <p>«Алгоритмы света создают атмосферу, в которой хочется задержаться. Кажется, что кафе живёт и дышит вместе с городом.»</p>
+        <span>— Лена, архитектор</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--contact reveal" id="contact">
+    <div class="contact__card">
+      <div class="contact__content">
+        <h2>Присоединяйтесь к вселенной вкуса</h2>
+        <p>Оставьте заявку на дегустацию или забронируйте стол — алгоритмы подберут идеальное время и предложат сопровождение.</p>
+        <form class="contact__form">
+          <div class="form__group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Иван" required>
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form__group">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="3" placeholder="Хочу попробовать алгоритмический флэт уайт"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Отправить запрос</button>
+        </form>
+      </div>
+      <aside class="contact__info">
+        <h3>Контакты</h3>
+        <ul>
+          <li>+7 (495) 777-88-99</li>
+          <li>Москва, ул. Будущего, 42</li>
+          <li>Ежедневно с 8:00 до 23:00</li>
+        </ul>
+        <div class="contact__socials">
+          <a href="#" aria-label="Telegram">TG</a>
+          <a href="#" aria-label="VK">VK</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© {{ 'now' | date: '%Y' }} Нашегомир. Технологии, которые чувствуются на вкус.</p>
+  <a href="#top" class="footer__top">Вернуться наверх</a>
+</footer>
